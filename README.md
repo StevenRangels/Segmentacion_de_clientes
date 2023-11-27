@@ -28,7 +28,7 @@ Este sistema de segmentación de clientes en Python utiliza lógica difusa para 
 
 1. El código fuente se encuentra en la carpeta "notebooks".
 
-2. las imágenes dadas en simulación se encuentran en la carpeta"Imágenes".
+2. las imágenes dadas en simulación se encuentran en la carpeta"Images".
 
 ## Descripción.
 
