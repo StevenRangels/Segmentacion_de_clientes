@@ -1,3 +1,11 @@
+# Versión: 1.0
+# Autor: Steven Rangel
+# Fecha: 2023/11/27
+"""
+Este script calcula la probabilidad de clasificar a un cliente
+como "PREFERENCIAL" en el sector bancario colombiano.
+"""
+# Importar librerías.
 import numpy as np
 import skfuzzy as fuzz
 from skfuzzy import control as ctrl
@@ -62,31 +70,31 @@ regla25 = ctrl.Rule(ahorro['alto'] & salario['alto'], preferencial['alto'])
 
 # Sistema de control.
 cliente_ctrl = ctrl.ControlSystem(
-    [    
+    [
     regla1,
-    regla2, 
-    regla3, 
-    regla4, 
-    regla5, 
-    regla6, 
-    regla7, 
-    regla8, 
-    regla9, 
+    regla2,
+    regla3,
+    regla4,
+    regla5,
+    regla6,
+    regla7,
+    regla8,
+    regla9,
     regla10,
     regla11,
-    regla12, 
+    regla12,
     regla13,
-    regla14, 
+    regla14,
     regla15,
-    regla16, 
-    regla17, 
-    regla18, 
+    regla16,
+    regla17,
+    regla18,
     regla19,
-    regla20, 
-    regla21, 
-    regla22, 
-    regla23, 
-    regla24, 
+    regla20,
+    regla21,
+    regla22,
+    regla23,
+    regla24,
     regla25
     ]
     )
